@@ -7,6 +7,7 @@
     <owners>Eliah Kagan</owners>
     <license type="expression">LGPL-2.1-or-later</license>
     <projectUrl>https://github.com/EliahKagan/LameNative</projectUrl>
+    <repository type="git" url="https://github.com/EliahKagan/LameNative.git" branch="3.99.5" />
     <description>32-bit and 64-bit native Windows LAME binaries for encoding MP3 audio (libmp3lame.dll). See https://lame.sourceforge.io for the upstream LAME project and https://www.rarewares.org/mp3-lame-libraries.php for the source of the binaries. Neither this package nor its owner are affiliated with either. Please note that Xianyi Cui did this first in https://www.nuget.org/packages/Xycui.LameNative and thus deserves credit for the idea.
 
 The major differences between this and https://www.nuget.org/packages/Xycui.LameNative are:

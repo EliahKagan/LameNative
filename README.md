@@ -74,7 +74,7 @@ For example, you can run this command to add the package to an SDK-style
 project:
 
 ```powershell
-dotnet add package Ekgn.LameNative --version 3.100
+dotnet add package Ekgn.LameNative --version 3.100.0
 ```
 
 ## Building the NuGet package yourself

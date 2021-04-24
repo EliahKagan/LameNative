@@ -16,7 +16,7 @@ The major differences between this and https://www.nuget.org/packages/Xycui.Lame
 
 (2) This package is available for multiple versions of LAME (not just 3.99.5), and I hope to provide updated packages when new versions of LAME are released.
 
-(3) Most importantly, this package includes (compressed) source code and copies it to the output directory as well, to help ease LGPL compliance. (If you don't want the source code files in the output directory, you could use a post-build task to remove them.)
+(3) This package includes (compressed) source code and copies it to the output directory as well, to help ease LGPL compliance. (If you don't want the source code files in the output directory, you could use a post-build task to remove them.)
 
 Please note that the maintainer of this NuGet package (Eliah Kagan) is not an author or copyright holder of LAME.</description>
     <releaseNotes>Updated LAME to version 3.100.</releaseNotes>

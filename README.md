@@ -1,7 +1,9 @@
 # Ekgn.LameNative (NuGet source)
 
-This repository and NuGet package provide 32-bit and 64-bit native Windows LAME
-binaries for encoding MP3 audio (`libmp3lame.dll`). Please see:
+This repository and the
+[**Ekgn.LameNative**](https://www.nuget.org/packages/Ekgn.LameNative/) NuGet
+package provide 32-bit and 64-bit native Windows LAME binaries for encoding MP3
+audio (`libmp3lame.dll`). Please see:
 
 - [The LAME Project](https://lame.sourceforge.io) for the upstream project and
   source code, including the source code included here.
@@ -62,8 +64,12 @@ you would otherwise be allowed to do.
 
 ## Installing the NuGet package
 
-In an SDK-style project, run this command to add the NuGet package, obtaining
-it from the package source [nuget.org](https://www.nuget.org/):
+The package is hosted at [nuget.org](https://www.nuget.org/) and can be
+installed with the methods described at
+[**Ekgn.LameNative**](https://www.nuget.org/packages/Ekgn.LameNative/).
+
+For example, you can run this command to add the package to an SDK-style
+project:
 
 ```powershell
 dotnet add package Ekgn.LameNative --version 3.99.5
@@ -88,15 +94,17 @@ package manager:
 scoop install nuget
 ```
 
-Most likely, you will want to install the package from
-[nuget.org](https://www.nuget.org/) rather than building it yourself.
+Most likely, you will prefer to install or download the package from
+[**Ekgn.LameNative**](https://www.nuget.org/packages/Ekgn.LameNative/) at
+[nuget.org](https://www.nuget.org/), rather than building it yourself.
 
 ## License Notices
 
 Some copyright and LGPL-related information is reproduced below for
 convenience.
 
-LAME&rsquo;s `README` file includes this copyright information:
+[LAME&rsquo;s `README` file](lame-3.99.5/README) includes this copyright
+information:
 
 > Copyrights (c) 1999-2011 by The LAME Project\
 > Copyrights (c) 1999,2000,2001 by Mark Taylor\
@@ -151,9 +159,9 @@ details.
 along with this library; if not, write to the Free Software Foundation, Inc.,
 51 Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
 
-LGPL compliance guidance fom the LAME developers (from the file called
-`LICENSE`, also reproduced in the root of this repository as
-`COPYING.LAME-HOWTO`):
+LGPL compliance guidance fom the LAME developers (from [the file called
+`LICENSE`](lame-3.99.5/LICENSE), also reproduced in the root of this repository
+as `COPYING.LAME-HOWTO`):
 
 > Can I use LAME in my commercial program?
 >

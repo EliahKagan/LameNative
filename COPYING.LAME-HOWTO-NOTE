@@ -1,0 +1,4 @@
+COPYING.LAME-HOWTO is a copy of lame-3.100/LICENSE. The file it refers to as
+"COPYING in this folder" is thus lame-3.100/COPYING, which is the LGPL v2. In
+contrast, COPYING in this top-level repository directory is the LGPL v2.1. See
+README.md for an explanation of why two versions of the LGPL are included.

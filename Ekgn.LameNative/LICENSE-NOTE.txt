@@ -1,0 +1,10 @@
+LICENSE.txt in this NuGet package is a copy of LICENSE in the top-level
+directory of the LAME source tree. The "COPYING" file that it refers to ("see
+COPYING in this folder") is the LGPL v2, provided as COPYING-LGPL-2.0.txt in
+this NuGet package. However, a handful of files in the LAME source code are
+licensed under the LGPL v2.1 or later, rather than the LGPL v2 or later. So, to
+be safe, I'm including both licenses and distributing this NuGet package under
+the terms of the LGPL v2.1 or later.
+
+The README.md file in the Git repository for this NuGet package has more
+details.

@@ -11,9 +11,9 @@ audio (`libmp3lame.dll`). Please see:
   Libraries](https://www.rarewares.org/mp3-lame-libraries.php) for
   [downloadable zip archives](https://www.rarewares.org/files/mp3/) containing
   the binaries included here:
-  [`libmp3lame-3.99.5x86.zip`](https://www.rarewares.org/files/mp3/libmp3lame-3.99.5x86.zip)
+  [`libmp3lame-3.100x86.zip`](https://www.rarewares.org/files/mp3/libmp3lame-3.100x86.zip)
   and
-  [`libmp3lame-3.99.5x64.zip`](https://www.rarewares.org/files/mp3/libmp3lame-3.99.5x64.zip).
+  [`libmp3lame-3.100x64.zip`](https://www.rarewares.org/files/mp3/libmp3lame-3.100x64.zip).
 - [Xycui.LameNative](https://www.nuget.org/packages/Xycui.LameNative), in which
   [Xianyi Cui](https://github.com/xycui) did this first and thus deserves
   credit for the idea.
@@ -27,19 +27,21 @@ The major differences between this and
 - This package uses the same version numbering scheme as LAME, so you know what
   version you&rsquo;re using when you manage your project&rsquo;s NuGet
   packages.
-- I hope to provide updated packages for later versions of the library.
+- This package is available for multiple versions of LAME (not just 3.99.5),
+  and I hope to provide updated packages when new versions of LAME are
+  released.
 - **This package includes (compressed) source code**&mdash;and even copies it
   to the output directory, too&mdash;to help ease LGPL compliance. (If you
   don&rsquo;t want the source code archive in the output directory, you could
   use a post-build task to remove it.)
 
-Though I obtained the DLLs included here from RareWares (as detailed above),
-they are identical to the DLLs in
-[Xycui.LameNative](https://www.nuget.org/packages/Xycui.LameNative) (which
-perhaps came from there as well). To avoid introducing incompatibility for no
-reason, I&rsquo;ve used the same naming convention as in that package (placing
+To avoid introducing incompatibility for no reason, I&rsquo;ve used the same
+naming convention as in
+[Xycui.LameNative](https://www.nuget.org/packages/Xycui.LameNative), placing
 `.32` or `.64` before the `.dll` suffix in each filename, so they can reside in
-the same directory).
+the same directory. (In version 3.99.5, the DLLs were identical, but
+`Xycui.LameNative` has not been updated to provide LAME 3.100, as of this
+writing.)
 
 See the `LICENSE`, `COPYING`, and `README` files, and license headers
 (commented license information) on individual source code files, in the
@@ -50,7 +52,7 @@ holder of LAME.** The `.tar.xz` archive is repacked from the upstream `.tar.gz`
 file, so it takes up less space when copied to a project&rsquo;s build output
 directory as detailed above.
 
-**The contents of this repository, which includes LAME 3.99.5, may be
+**The contents of this repository, which includes LAME 3.100, may be
 distributed under the [GNU Lesser General Public License v2.1 or
 later](https://spdx.org/licenses/LGPL-2.1-or-later.html).** Some of the files
 in LAME show other licenses. In the root of the LAME source tree, the `README`
@@ -72,7 +74,7 @@ For example, you can run this command to add the package to an SDK-style
 project:
 
 ```powershell
-dotnet add package Ekgn.LameNative --version 3.99.5
+dotnet add package Ekgn.LameNative --version 3.100
 ```
 
 ## Building the NuGet package yourself
@@ -103,7 +105,7 @@ Most likely, you will prefer to install or download the package from
 Some copyright and LGPL-related information is reproduced below for
 convenience.
 
-[LAME&rsquo;s `README` file](lame-3.99.5/README) includes this copyright
+[LAME&rsquo;s `README` file](lame-3.100/README) includes this copyright
 information:
 
 > Copyrights (c) 1999-2011 by The LAME Project\
@@ -160,13 +162,13 @@ along with this library; if not, write to the Free Software Foundation, Inc.,
 51 Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
 
 LGPL compliance guidance fom the LAME developers (from [the file called
-`LICENSE`](lame-3.99.5/LICENSE), also reproduced in the root of this repository
+`LICENSE`](lame-3.100/LICENSE), also reproduced in the root of this repository
 as `COPYING.LAME-HOWTO`):
 
 > Can I use LAME in my commercial program?
 >
-> Yes, you can, under the restrictions of the LGPL.  The easiest way to do this
-is to:
+> Yes, you can, under the restrictions of the LGPL (see [COPYING in this
+folder](lame-3.100/COPYING)**&dagger;**). The easiest way to do this is to:
 >
 > 1. Link to LAME as separate library (libmp3lame.a on unix or lame_enc.dll or
      libmp3lame.dll on windows)
@@ -174,8 +176,10 @@ is to:
 > 2. Fully acknowledge that you are using LAME, and give a link to our web
      site, www.mp3dev.org
 >
-> 3. If you make modifications to LAME, you *must* release these these
-     modifications back to the LAME project, under the LGPL.
+> 3. If you make modifications to LAME, you *must* release these modifications
+     back to the LAME project, under the LGPL.
+
+**&dagger;** *Hyperlink added for disambiguation.*
 
 Note that the official website of The LAME Project has since moved to
 https://lame.sourceforge.io.

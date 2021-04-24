@@ -2,37 +2,39 @@
 <package>
   <metadata>
     <id>Ekgn.LameNative</id>
-    <version>3.99.5</version>
+    <version>3.100</version>
     <authors>authors of the LAME mp3 encoder</authors>
     <owners>Eliah Kagan</owners>
     <license type="expression">LGPL-2.1-or-later</license>
     <projectUrl>https://github.com/EliahKagan/LameNative</projectUrl>
-    <repository type="git" url="https://github.com/EliahKagan/LameNative.git" branch="3.99.5" />
+    <repository type="git" url="https://github.com/EliahKagan/LameNative.git" branch="3.100" />
     <description>32-bit and 64-bit native Windows LAME binaries for encoding MP3 audio (libmp3lame.dll). See https://lame.sourceforge.io for the upstream LAME project and https://www.rarewares.org/mp3-lame-libraries.php for the source of the binaries. Neither this package nor its owner are affiliated with either. Please note that Xianyi Cui did this first in https://www.nuget.org/packages/Xycui.LameNative and thus deserves credit for the idea.
 
 The major differences between this and https://www.nuget.org/packages/Xycui.LameNative are:
 
 (1) This package uses the same version numbering scheme as LAME.
 
-(2) I hope to provide updated packages for later versions of the library.
+(2) This package is available for multiple versions of LAME (not just 3.99.5), and I hope to provide updated packages when new versions of LAME are released.
 
 (3) Most importantly, this package includes (compressed) source code and copies it to the output directory as well, to help ease LGPL compliance. (If you don't want the source code files in the output directory, you could use a post-build task to remove them.)
 
 Please note that the maintainer of this NuGet package (Eliah Kagan) is not an author or copyright holder of LAME.</description>
+    <releaseNotes>Updated LAME to version 3.100.</releaseNotes>
     <tags>Lame MP3 Native</tags>
     <contentFiles>
       <files include="any/any/libmp3lame.32.dll" buildAction="content" flatten="true" copyToOutput="true" />
       <files include="any/any/libmp3lame.64.dll" buildAction="content" flatten="true" copyToOutput="true" />
-      <files include="any/any/lame-3.99.5.tar.xz" buildAction="content" flatten="true" copyToOutput="true" />
+      <files include="any/any/lame-3.100.tar.xz" buildAction="content" flatten="true" copyToOutput="true" />
     </contentFiles>
   </metadata>
 
   <files>
     <file src="contentFiles/any/any/libmp3lame.32.dll" target="contentFiles/any/any" />
     <file src="contentFiles/any/any/libmp3lame.64.dll" target="contentFiles/any/any" />
-    <file src="contentFiles/any/any/lame-3.99.5.tar.xz" target="contentFiles/any/any" />
+    <file src="contentFiles/any/any/lame-3.100.tar.xz" target="contentFiles/any/any" />
     <file src="COPYING.LGPL-2.0.txt" />
     <file src="COPYING.LGPL-2.1.txt" />
     <file src="LICENSE.txt" />
+    <file src="LICENSE-NOTE.txt" />
   </files>
 </package>

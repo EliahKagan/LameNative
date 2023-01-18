@@ -122,8 +122,8 @@ However, the files present in the `mpglib` directory carry LGPL rather than GPL
 license notices (other than `depcomp`, which is an automatically generated file
 with a special exception permitting it to be distributed under the terms of a
 program that contains it). The [&ldquo;mpglib license in
-LAME&rdquo;](https://sourceforge.net/p/lame/mailman/lame-dev/thread/20080724085050.30463yz0cyn01740%40webmail.leidinger.net/#msg19929916)
-email thread seems to give some historical insight into this situation.
+LAME&rdquo;](https://sourceforge.net/p/lame/mailman/message/19929916/) email
+thread seems to give some historical insight into this situation.
 
 LGPL 2.1+ file header notice:
 
